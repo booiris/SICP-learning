@@ -1,0 +1,4 @@
+[run-code]
+    command = "scheme"
+    args = ["-quiet --heap 512 --load  ${file}"]
+
