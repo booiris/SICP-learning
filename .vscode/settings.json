@@ -38,9 +38,6 @@
     //     "editor.quickSuggestions": true
     // },
     // "C_Cpp.autocomplete": "Disabled",
-    "clang.completion.enable": false,
-    "clang.completion.completeMacros": false,
-    "clang.diagnostic.delay": 1000,
     "vim.startInInsertMode": true,
     "vim.smartRelativeLine": true,
     "vim.useCtrlKeys": false,
