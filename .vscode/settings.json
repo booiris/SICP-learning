@@ -31,7 +31,7 @@
     "diffEditor.ignoreTrimWhitespace": false,
     "C_Cpp.errorSquiggles": "Disabled",
     "code-runner.ignoreSelection": true,
-    // "editor.quickSuggestions": false,
+    "editor.quickSuggestions":  true,
     // "[cpp]": {
     //     "editor.quickSuggestions": true
     // },
