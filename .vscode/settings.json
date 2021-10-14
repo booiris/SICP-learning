@@ -17,7 +17,8 @@
     "code-runner.executorMap": {
         "cpp": "g++ $fileName -o $workspaceRoot/build/$fileNameWithoutExt.exe && $workspaceRoot/build/$fileNameWithoutExt.exe",
         // g++ $fileName -o build/$fileNameWithoutExt && .\\build\\$fileNameWithoutExt
-        "scheme": "scheme -quiet < $fileName",
+        // "scheme": "scheme -quiet < $fileName",
+        "scheme": "scheme < $fileName",
     },
     // 在运行代码之前保存文件
     "code-runner.saveFileBeforeRun": true,
