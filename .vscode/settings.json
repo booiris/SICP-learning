@@ -2,10 +2,7 @@
     "diffEditor.renderIndicators": false,
     "editor.formatOnType": true,
     "editor.formatOnPaste": true,
-    "editor.wordWrapColumn": 100,
-    "editor.minimap.renderCharacters": false,
     "editor.tabCompletion": "on",
-    "editor.minimap.enabled": false,
     "code-runner.runInTerminal": true,
     // 运行代码之前清除之前的输出
     "code-runner.clearPreviousOutput": true,
@@ -22,7 +19,7 @@
     },
     // 在运行代码之前保存文件
     "code-runner.saveFileBeforeRun": true,
-    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.fontSize": 16,
     "terminal.integrated.cursorStyle": "line",
     "terminal.integrated.cursorBlinking": true,
     "files.autoGuessEncoding": false,
