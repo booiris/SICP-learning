@@ -11,4 +11,5 @@
 (test 0 (p))
 
 
-;TODO undown
+;normal-order： 执行 test 0 (p) 时，参数 0 和 (p) 都会被求值， 此时 (p) 被执行，进入死循环
+;applicative-order： 需要时才会计算， 所以不会计算 (p), 不会进入死循环

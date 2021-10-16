@@ -14,3 +14,5 @@
           guess
           (sqrt-iter (improve guess x)
                      x)))
+
+; 由于 normal-order 的原因，传入 new-if 的参数需要被计算一遍，导致 sqer-iter 重复迭代于同一个输入，递归爆栈。
