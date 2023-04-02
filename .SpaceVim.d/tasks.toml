@@ -1,4 +1,0 @@
-[run-code]
-    command = "scheme"
-    args = [" <  ${file}"]
-
