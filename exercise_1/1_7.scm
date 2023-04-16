@@ -21,7 +21,7 @@
 ; (sqrt 9)
 
 ; ; test fails for small numbers
-; ; 
+; Insufficient accuracy of the result
 ; (sqrt 0.00009)
 
 ; ; test fails for large numbers
