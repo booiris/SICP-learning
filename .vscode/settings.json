@@ -3,7 +3,7 @@
     "editor.formatOnType": true,
     "editor.formatOnPaste": true,
     "editor.tabCompletion": "on",
-    "code-runner.runInTerminal": true,
+    "code-runner.runInTerminal": false,
     "code-runner.clearPreviousOutput": true,
     "code-runner.fileDirectoryAsCwd": true,
     "code-runner.executorMap": {
@@ -13,4 +13,14 @@
     // 在运行代码之前保存文件
     "code-runner.saveFileBeforeRun": true,
     "code-runner.preserveFocus": false,
+    "magicRacket.languageServer.command": "xvfb-run",
+    "magicRacket.languageServer.arguments": [
+        "--auto-servernum",
+        "racket",
+        "--lib",
+        "racket-langserver"
+    ],
+    "cSpell.words": [
+        "SICP"
+    ],
 }
