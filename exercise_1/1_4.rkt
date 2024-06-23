@@ -1,11 +1,14 @@
+#lang racket
+
 ;Exercise 1.4.
 ; Observe that our model of evaluation allows for combinations whose operators are compound expressions. Use this observation to describe the behavior of the following procedure:
 
 (define (a-plus-abs-b a b)
-    ((if (> b 0) + -) a b))
+  ((if (> b 0) + -) a b))
 
 ; if b > 0 => a + b
 ; else => a - b
-; that is a + abs(b)
+; a + abs(b)
+; The function dynamically selects the operator based on the sign of b, effectively adding the absolute value of b to a.
 
 (a-plus-abs-b 1 1)
