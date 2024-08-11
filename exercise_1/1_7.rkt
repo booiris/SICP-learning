@@ -10,7 +10,7 @@
   (* x x))
 
 (define (old-sqrt-iter guess x)
-  (if (old-good-enough? guess x)
+  (if (old-good-enough1? guess x)
       guess
       (old-sqrt-iter (old-improve guess x) x)))
 
@@ -20,17 +20,22 @@
 (define (old-good-enough? guess x)
   (< (abs (- (square guess) x)) 0.001))
 
+(define (old-good-enough1? guess x)
+  (< (abs (- guess (/ x guess))) (* 0.001  guess)))
+
 (define (old-sqrt x)
   (old-sqrt-iter 1.0 x))
 
 ; ; test fails for small numbers
 ; Insufficient accuracy of the result
-; (old-sqrt 0.00009)
+(old-sqrt 0.00009)
 
 ; ; test fails for large numbers
 ; ; time exceeded
 ; 因为 lisp 实现的小数精度不足以表示两个大数之间的差，所以 sqrt 会陷入死循环而无法得出正确结果。
-; (define x (old-sqrt 4598347981248908098))
+(define y (old-sqrt 4598347981248908098))
+(println y)
+(square y)
 
 (define (sqrt-iter pre guess x)
   (if (good-enough? pre guess)
@@ -41,10 +46,10 @@
   (average guess (/ x guess)))
 
 (define (good-enough-1? pre guess)
-  (< (abs (- pre guess)) 0.001))
+  (< (abs (- pre guess)) 0.00000000001))
 
 (define (good-enough-2? pre guess)
-  (< (/ (abs (- pre guess)) pre) 0.001))
+  (< (/ (abs (- pre guess)) pre) 0.00001))
 
 (define good-enough? good-enough-1?)
 
